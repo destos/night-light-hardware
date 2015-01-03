@@ -34,18 +34,18 @@
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -140,9 +140,26 @@
 <wire x1="25" y1="30" x2="25" y2="55" width="0.4064" layer="51"/>
 <wire x1="25" y1="55" x2="0" y2="55" width="0.4064" layer="51"/>
 <wire x1="0" y1="55" x2="0" y2="30" width="0.4064" layer="51"/>
-<rectangle x1="7" y1="49" x2="17" y2="51" layer="46"/>
+<rectangle x1="7" y1="47.5" x2="18" y2="50.1" layer="46"/>
 <rectangle x1="25" y1="0" x2="50" y2="7" layer="41"/>
 <rectangle x1="25" y1="0" x2="50" y2="7" layer="42"/>
+<hole x="25" y="4.5" drill="1.4"/>
+<hole x="25" y="2" drill="1.4"/>
+<hole x="25" y="0" drill="1.4"/>
+<hole x="50" y="19.5" drill="1.4"/>
+<hole x="50" y="17" drill="1.4"/>
+<hole x="50" y="7" drill="1.4"/>
+<hole x="50" y="4.5" drill="1.4"/>
+<hole x="50" y="2" drill="1.4"/>
+<hole x="50" y="0" drill="1.4"/>
+<hole x="75" y="19.5" drill="1.4"/>
+<hole x="75" y="17" drill="1.4"/>
+<hole x="75" y="7" drill="1.4"/>
+<hole x="75" y="4.5" drill="1.4"/>
+<hole x="75" y="2" drill="1.4"/>
+<hole x="75" y="0" drill="1.4"/>
+<rectangle x1="25" y1="30" x2="38.5" y2="55" layer="41"/>
+<rectangle x1="25" y1="30" x2="38.5" y2="55" layer="42"/>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -317,6 +334,26 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <text x="-1.27" y="5.08" size="0.4064" layer="25">&gt;Name</text>
 <text x="-1.27" y="-5.08" size="0.4064" layer="27">&gt;Value</text>
 <text x="-6.35" y="-3.81" size="1.016" layer="48" rot="R90">Card edge</text>
+</package>
+<package name="USB-A-S">
+<description>&lt;b&gt;USB Series A Surface Mounted&lt;/b&gt;</description>
+<wire x1="3.6957" y1="6.5659" x2="-10.287" y2="6.5659" width="0.127" layer="21"/>
+<wire x1="3.6957" y1="-6.5659" x2="-10.287" y2="-6.5659" width="0.127" layer="21"/>
+<wire x1="-10.287" y1="6.477" x2="-10.287" y2="-6.477" width="0.127" layer="21"/>
+<wire x1="3.7084" y1="6.5024" x2="3.7084" y2="-6.5024" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-5.08" x2="-8.89" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="-4.445" x2="-8.89" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="-1.27" x2="-2.54" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="5.08" x2="-8.89" y2="4.445" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="4.445" x2="-8.89" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="1.27" x2="-2.54" y2="0.635" width="0.127" layer="21"/>
+<pad name="P$5" x="0" y="-6.5659" drill="2.3114" rot="R270"/>
+<pad name="P$6" x="0" y="6.5659" drill="2.3114" rot="R270"/>
+<smd name="D-" x="3.45" y="1" dx="3" dy="0.9" layer="1"/>
+<smd name="VBUS" x="3.45" y="3" dx="3" dy="0.9" layer="1"/>
+<smd name="D+" x="3.45" y="-1" dx="3" dy="0.9" layer="1"/>
+<smd name="GND" x="3.45" y="-3" dx="3" dy="0.9" layer="1"/>
+<text x="5.715" y="3.81" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -1318,6 +1355,7 @@ design rules under a new name.</description>
 </element>
 <element name="R6" library="SparkFun-Resistors" package="R2512" value="0.1/1% (PT2512FK-070R1L)" x="21" y="52"/>
 <element name="JP2" library="SparkFun-Connectors" package="USB-A-PCB" value="USBPCB" x="32.5" y="40" rot="R90"/>
+<element name="USBOUT" library="SparkFun-Connectors" package="USB-A-S" value="USB-A-S" x="67" y="11" rot="R180"/>
 </elements>
 <signals>
 <signal name="IR-">
@@ -1409,7 +1447,7 @@ design rules under a new name.</description>
 <via x="55.5" y="24.5" extent="1-16" drill="0.6"/>
 <wire x1="55.5" y1="24.5" x2="56" y2="24.5" width="0.6096" layer="16"/>
 <wire x1="56" y1="24.5" x2="58.5" y2="22" width="0.6096" layer="16"/>
-<via x="58.5" y="22" extent="1-16" drill="0.6"/>
+<via x="58.5" y="22" extent="1-16" drill="1"/>
 <wire x1="58.5" y1="22" x2="60.8" y2="22" width="0.6096" layer="1"/>
 <wire x1="60.8" y1="22" x2="60.85" y2="22.05" width="0.6096" layer="1"/>
 <wire x1="60.85" y1="22.05" x2="61.55" y2="22.05" width="0.6096" layer="1"/>
@@ -1442,22 +1480,46 @@ design rules under a new name.</description>
 <contactref element="JP2" pad="5V"/>
 <contactref element="R6" pad="2"/>
 <contactref element="U2" pad="1"/>
-<wire x1="69.35" y1="22.05" x2="77.35" y2="22.05" width="0" layer="19" extent="1-1"/>
-<wire x1="44.35" y1="22.05" x2="52.35" y2="22.05" width="0" layer="19" extent="1-1"/>
-<wire x1="19.35" y1="22.05" x2="27.35" y2="22.05" width="0" layer="19" extent="1-1"/>
-<wire x1="18.3" y1="31.9099" x2="16" y2="24.5" width="0" layer="19" extent="1-16"/>
-<wire x1="20.2" y1="31.9099" x2="18.3" y2="31.9099" width="0" layer="19" extent="1-1"/>
-<wire x1="15.36" y1="36.37" x2="18.3" y2="31.9099" width="0" layer="19" extent="1-1"/>
-<wire x1="17.42" y1="38.06" x2="15.36" y2="36.37" width="0" layer="19" extent="1-1"/>
+<wire x1="19.35" y1="22.05" x2="21" y2="22.05" width="0.6096" layer="1"/>
+<wire x1="21" y1="22.05" x2="21" y2="22" width="0.6096" layer="1"/>
+<via x="21" y="22" extent="1-16" drill="0.6"/>
+<wire x1="21" y1="22" x2="25" y2="22" width="0.6096" layer="16"/>
+<via x="25" y="22" extent="1-16" drill="1.4"/>
+<wire x1="25" y1="22" x2="27.35" y2="22" width="0.6096" layer="1"/>
+<wire x1="27.35" y1="22" x2="27.35" y2="22.05" width="0.6096" layer="1"/>
+<wire x1="44.35" y1="22.05" x2="46" y2="22.05" width="0.6096" layer="1"/>
+<wire x1="46" y1="22.05" x2="46" y2="22" width="0.6096" layer="1"/>
+<via x="46" y="22" extent="1-16" drill="0.6" diameter="1.016"/>
+<wire x1="46" y1="22" x2="50" y2="22" width="0.6096" layer="16"/>
+<via x="50" y="22" extent="1-16" drill="1.4" diameter="1.016"/>
+<wire x1="50" y1="22" x2="52.35" y2="22" width="0.6096" layer="1"/>
+<wire x1="52.35" y1="22" x2="52.35" y2="22.05" width="0.6096" layer="1"/>
+<wire x1="69.35" y1="22.05" x2="71" y2="22.05" width="0.6096" layer="1"/>
+<wire x1="71" y1="22.05" x2="71" y2="22" width="0.6096" layer="1"/>
+<via x="71" y="22" extent="1-16" drill="0.6" diameter="1.016"/>
+<wire x1="71" y1="22" x2="75" y2="22" width="0.6096" layer="16"/>
+<via x="75" y="22" extent="1-16" drill="1.4" diameter="1.016"/>
+<wire x1="75" y1="22" x2="77.35" y2="22" width="0.6096" layer="1"/>
+<wire x1="77.35" y1="22" x2="77.35" y2="22.05" width="0.6096" layer="1"/>
+<contactref element="USBOUT" pad="VBUS"/>
+<wire x1="63.55" y1="8" x2="60" y2="8" width="1.27" layer="1"/>
+<wire x1="60" y1="8" x2="58.5" y2="9.5" width="1.27" layer="1"/>
+<wire x1="58.5" y1="9.5" x2="58.5" y2="22" width="1.27" layer="1"/>
+<wire x1="58.5" y1="22" x2="58.5" y2="30" width="1.27" layer="16"/>
+<wire x1="22.61" y1="44.68" x2="22.3" y2="40.68" width="0" layer="19" extent="1-1"/>
+<wire x1="17.42" y1="38.06" x2="22.3" y2="40.68" width="0" layer="19" extent="1-1"/>
+<wire x1="15.36" y1="36.37" x2="17.42" y2="38.06" width="0" layer="19" extent="1-1"/>
 <wire x1="11.85961875" y1="34.70961875" x2="15.36" y2="36.37" width="0" layer="19" extent="1-1"/>
 <wire x1="8.08" y1="33.37" x2="11.85961875" y2="34.70961875" width="0" layer="19" extent="1-1"/>
 <wire x1="10.94" y1="39.4375" x2="11.85961875" y2="34.70961875" width="0" layer="19" extent="1-1"/>
-<wire x1="22.3" y1="40.68" x2="17.42" y2="38.06" width="0" layer="19" extent="1-1"/>
-<wire x1="22.61" y1="44.68" x2="22.3" y2="40.68" width="0" layer="19" extent="1-1"/>
+<wire x1="18.3" y1="31.9099" x2="15.36" y2="36.37" width="0" layer="19" extent="1-1"/>
+<wire x1="20.2" y1="31.9099" x2="18.3" y2="31.9099" width="0" layer="19" extent="1-1"/>
 <wire x1="23.8" y1="52" x2="22.61" y2="44.68" width="0" layer="19" extent="1-1"/>
+<wire x1="16" y1="24.5" x2="18.3" y2="31.9099" width="0" layer="19" extent="1-16"/>
 <wire x1="3.73" y1="50.0348" x2="10.94" y2="39.4375" width="0" layer="19" extent="1-1"/>
 <wire x1="3.73" y1="51.9652" x2="3.73" y2="50.0348" width="0" layer="19" extent="1-1"/>
-<wire x1="36" y1="39.8" x2="22.3" y2="40.68" width="0" layer="19" extent="1-1"/>
+<wire x1="36" y1="39.8" x2="36" y2="55" width="1.4224" layer="1"/>
+<wire x1="36" y1="55" x2="23.8" y2="52" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="GND">
 <contactref element="MP" pad="21"/>
@@ -1537,24 +1599,33 @@ design rules under a new name.</description>
 <via x="43" y="8" extent="1-16" drill="0.6"/>
 <via x="46" y="8" extent="1-16" drill="0.6"/>
 <via x="28" y="18.5" extent="1-16" drill="0.6"/>
-<via x="23" y="2" extent="1-16" drill="0.6"/>
+<via x="22.5" y="2" extent="1-16" drill="0.6"/>
 <via x="4.5" y="5" extent="1-16" drill="0.6"/>
 <via x="7" y="8" extent="1-16" drill="0.6"/>
 <via x="4.5" y="19" extent="1-16" drill="0.6"/>
 <via x="21" y="7" extent="1-16" drill="0.6"/>
-<via x="23" y="3.5" extent="1-16" drill="0.6"/>
+<via x="22.5" y="3.5" extent="1-16" drill="0.6"/>
 <contactref element="U2" pad="3"/>
 <contactref element="JP2" pad="GND"/>
 <contactref element="R6" pad="1"/>
 <contactref element="U2" pad="2"/>
-<wire x1="14.21" y1="41.21" x2="18.2" y2="52" width="0" layer="19" extent="1-1"/>
-<wire x1="3.73" y1="50.6698" x2="4.29" y2="46.37" width="0" layer="19" extent="1-1"/>
-<wire x1="3.73" y1="51.3302" x2="3.73" y2="50.6698" width="0" layer="19" extent="1-1"/>
+<via x="25" y="27" extent="1-16" drill="1.4" diameter="1.016"/>
+<via x="50" y="27" extent="1-16" drill="1.4" diameter="1.016"/>
+<via x="75" y="27" extent="1-16" drill="1.4" diameter="1.016"/>
+<contactref element="USBOUT" pad="GND"/>
+<via x="50" y="9.5" extent="1-16" drill="1.4" diameter="1.016"/>
+<via x="75" y="9.5" extent="1-16" drill="1.4" diameter="1.016"/>
+<via x="50" y="12" extent="1-16" drill="1.4" diameter="1.016"/>
+<via x="50" y="14.5" extent="1-16" drill="1.4" diameter="1.016"/>
+<via x="75" y="12" extent="1-16" drill="1.4" diameter="1.016"/>
+<via x="75" y="14.5" extent="1-16" drill="1.4" diameter="1.016"/>
 <wire x1="12.86038125" y1="35.71038125" x2="17.16" y2="36.37" width="0" layer="19" extent="1-1"/>
 <wire x1="12.86038125" y1="35.21" x2="12.86038125" y2="35.71038125" width="0" layer="19" extent="1-1"/>
 <wire x1="12.86038125" y1="34.70961875" x2="12.86038125" y2="35.21" width="0" layer="19" extent="1-1"/>
 <wire x1="12.36" y1="35.21" x2="12.86038125" y2="35.21" width="0" layer="19" extent="1-1"/>
-<wire x1="29" y1="39.8" x2="22.35" y2="38" width="0" layer="19" extent="1-1"/>
+<wire x1="3.73" y1="50.6698" x2="4.29" y2="46.37" width="0" layer="19" extent="1-1"/>
+<wire x1="29" y1="39.8" x2="29" y2="55" width="1.4224" layer="1"/>
+<wire x1="29" y1="55" x2="18.2" y2="52" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$7">
 <contactref element="MP" pad="20"/>
@@ -1623,7 +1694,13 @@ design rules under a new name.</description>
 <contactref element="L6" pad="2-DOUT"/>
 <contactref element="L7" pad="4-DIN"/>
 <wire x1="47.65" y1="22.05" x2="47.65" y2="22.25" width="0.4064" layer="1"/>
-<wire x1="47.65" y1="22.25" x2="52.35" y2="26.95" width="0.4064" layer="1"/>
+<wire x1="47.65" y1="22.25" x2="47.75" y2="22.25" width="0.4064" layer="1"/>
+<wire x1="47.75" y1="22.25" x2="50" y2="24.5" width="0.4064" layer="1"/>
+<via x="50" y="24.5" extent="1-16" drill="1.4" diameter="1.016"/>
+<wire x1="50" y1="24.5" x2="52.5" y2="24.5" width="0.4064" layer="16"/>
+<via x="52.5" y="24.5" extent="1-16" drill="0.6" diameter="1.016"/>
+<wire x1="52.5" y1="24.5" x2="52.5" y2="26.8" width="0.4064" layer="1"/>
+<wire x1="52.5" y1="26.8" x2="52.35" y2="26.95" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$14">
 <contactref element="L5" pad="2-DOUT"/>
@@ -1635,7 +1712,13 @@ design rules under a new name.</description>
 <contactref element="L9" pad="2-DOUT"/>
 <contactref element="L10" pad="4-DIN"/>
 <wire x1="77.35" y1="26.95" x2="77.35" y2="26.75" width="0.4064" layer="1"/>
-<wire x1="77.35" y1="26.75" x2="72.65" y2="22.05" width="0.4064" layer="1"/>
+<wire x1="72.65" y1="22.05" x2="72.65" y2="22.15" width="0.4064" layer="1"/>
+<wire x1="72.65" y1="22.15" x2="75" y2="24.5" width="0.4064" layer="1"/>
+<via x="75" y="24.5" extent="1-16" drill="1.4" diameter="1.016"/>
+<wire x1="75" y1="24.5" x2="77.5" y2="24.5" width="0.4064" layer="16"/>
+<via x="77.5" y="24.5" extent="1-16" drill="0.6" diameter="1.016"/>
+<wire x1="77.5" y1="24.5" x2="77.5" y2="26.8" width="0.4064" layer="1"/>
+<wire x1="77.5" y1="26.8" x2="77.35" y2="26.95" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$19">
 <contactref element="L8" pad="2-DOUT"/>
@@ -1905,30 +1988,20 @@ design rules under a new name.</description>
 <via x="10.8" y="4.5" extent="1-16" drill="0.6" diameter="1.016"/>
 <wire x1="10.8" y1="4.5" x2="11.65" y2="4.5" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$4">
-<via x="25" y="22" extent="1-16" drill="1.4"/>
-</signal>
-<signal name="N$5">
-<via x="25" y="24.5" extent="1-16" drill="1.4"/>
-</signal>
-<signal name="N$11">
-<via x="50" y="22" extent="1-16" drill="1.4"/>
-</signal>
-<signal name="N$13">
-<via x="50" y="24.5" extent="1-16" drill="1.4"/>
-</signal>
 <signal name="N$16">
-</signal>
-<signal name="N$18">
-<via x="75" y="22" extent="1-16" drill="1.4"/>
-</signal>
-<signal name="N$21">
-<via x="75" y="24.5" extent="1-16" drill="1.4"/>
 </signal>
 <signal name="N$23">
 <contactref element="L3" pad="2-DOUT"/>
 <contactref element="L4" pad="4-DIN"/>
-<wire x1="22.65" y1="22.05" x2="27.35" y2="26.95" width="0.4064" layer="1"/>
+<wire x1="22.65" y1="22.05" x2="22.65" y2="22.15" width="0.4064" layer="1"/>
+<wire x1="22.65" y1="22.15" x2="25" y2="24.5" width="0.4064" layer="1"/>
+<via x="25" y="24.5" extent="1-16" drill="1.4" diameter="1.016"/>
+<wire x1="25" y1="24.5" x2="27" y2="24.5" width="0.4064" layer="16"/>
+<via x="27" y="24.5" extent="1-16" drill="0.6" diameter="1.016"/>
+<wire x1="27" y1="24.5" x2="27" y2="25.5" width="0.4064" layer="1"/>
+<wire x1="27" y1="25.5" x2="27.5" y2="26" width="0.4064" layer="1"/>
+<wire x1="27.5" y1="26" x2="27.5" y2="26.8" width="0.4064" layer="1"/>
+<wire x1="27.5" y1="26.8" x2="27.35" y2="26.95" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$28">
 <contactref element="L4" pad="2-DOUT"/>

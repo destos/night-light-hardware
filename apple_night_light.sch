@@ -5372,6 +5372,9 @@ at 30/07/2012 17:45:58</description>
 <part name="JP2" library="SparkFun-Connectors" deviceset="USB" device="PCB"/>
 <part name="P+12" library="supply1" deviceset="+5V" device=""/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
+<part name="USBOUT" library="SparkFun-Connectors" deviceset="USB" device="-A-S"/>
+<part name="P+13" library="supply1" deviceset="+5V" device=""/>
+<part name="GND28" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5472,6 +5475,9 @@ at 30/07/2012 17:45:58</description>
 <instance part="JP2" gate="G$1" x="-144.78" y="96.52" rot="R180"/>
 <instance part="P+12" gate="1" x="-132.08" y="104.14"/>
 <instance part="GND27" gate="1" x="-132.08" y="83.82"/>
+<instance part="USBOUT" gate="G$1" x="-93.98" y="48.26"/>
+<instance part="P+13" gate="1" x="-111.76" y="50.8" rot="R90"/>
+<instance part="GND28" gate="1" x="-104.14" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -5614,6 +5620,13 @@ at 30/07/2012 17:45:58</description>
 <pinref part="P+12" gate="1" pin="+5V"/>
 <wire x1="-132.08" y1="101.6" x2="-132.08" y2="99.06" width="0.1524" layer="91"/>
 <junction x="-132.08" y="99.06"/>
+</segment>
+<segment>
+<wire x1="-96.52" y1="50.8" x2="-109.22" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="P+13" gate="1" pin="+5V"/>
+<pinref part="USBOUT" gate="G$1" pin="VBUS"/>
+<junction x="-96.52" y="50.8"/>
+<junction x="-109.22" y="50.8"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -5853,6 +5866,14 @@ at 30/07/2012 17:45:58</description>
 <wire x1="-132.08" y1="96.52" x2="-142.24" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="GND27" gate="1" pin="GND"/>
 <junction x="-132.08" y="86.36"/>
+</segment>
+<segment>
+<pinref part="USBOUT" gate="G$1" pin="GND"/>
+<wire x1="-96.52" y1="48.26" x2="-104.14" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="GND28" gate="1" pin="GND"/>
+<wire x1="-104.14" y1="48.26" x2="-104.14" y2="45.72" width="0.1524" layer="91"/>
+<junction x="-96.52" y="48.26"/>
+<junction x="-104.14" y="45.72"/>
 </segment>
 </net>
 <net name="N$7" class="0">
