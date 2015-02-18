@@ -5970,7 +5970,6 @@ at 30/07/2012 17:45:58</description>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="FTDI_DEVICE" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
@@ -6062,7 +6061,7 @@ at 30/07/2012 17:45:58</description>
 <instance part="R1" gate="G$1" x="-60.96" y="124.46" rot="R90"/>
 <instance part="C3" gate="G$1" x="-45.72" y="132.08"/>
 <instance part="GND10" gate="1" x="-45.72" y="119.38"/>
-<instance part="C4" gate="G$1" x="-27.94" y="129.54"/>
+<instance part="C4" gate="G$1" x="-35.56" y="127"/>
 <instance part="GND11" gate="1" x="-35.56" y="119.38"/>
 <instance part="+3V2" gate="G$1" x="-116.84" y="33.02" rot="R90"/>
 <instance part="P+5" gate="1" x="-63.5" y="40.64"/>
@@ -6072,10 +6071,9 @@ at 30/07/2012 17:45:58</description>
 <instance part="C5" gate="G$1" x="-63.5" y="25.4"/>
 <instance part="GND12" gate="1" x="-63.5" y="15.24"/>
 <instance part="JP1" gate="G$1" x="15.24" y="121.92"/>
-<instance part="GND13" gate="1" x="2.54" y="114.3" rot="R270"/>
-<instance part="GND14" gate="1" x="-2.54" y="116.84" rot="R270"/>
+<instance part="GND13" gate="1" x="7.62" y="111.76"/>
 <instance part="P+6" gate="1" x="-12.7" y="119.38" rot="R90"/>
-<instance part="GND15" gate="1" x="-2.54" y="116.84" rot="R270"/>
+<instance part="GND15" gate="1" x="0" y="114.3"/>
 <instance part="GND16" gate="1" x="96.52" y="129.54" rot="R270"/>
 <instance part="P+7" gate="1" x="147.32" y="129.54" rot="R270"/>
 <instance part="C6" gate="G$1" x="-38.1" y="83.82" rot="R90"/>
@@ -6370,7 +6368,7 @@ at 30/07/2012 17:45:58</description>
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
 <pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="-35.56" y1="121.92" x2="-27.94" y2="127" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="121.92" x2="-35.56" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
@@ -6385,15 +6383,13 @@ at 30/07/2012 17:45:58</description>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="GND"/>
-<wire x1="10.16" y1="114.3" x2="5.08" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="114.3" x2="7.62" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="CTS"/>
 <wire x1="10.16" y1="116.84" x2="0" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="GND14" gate="1" pin="GND"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<junction x="0" y="116.84"/>
 </segment>
 <segment>
 <pinref part="COM" gate="G$1" pin="VSS@20"/>
@@ -6676,7 +6672,7 @@ at 30/07/2012 17:45:58</description>
 <junction x="-60.96" y="139.7"/>
 <junction x="-45.72" y="139.7"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="-27.94" y1="134.62" x2="-35.56" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="132.08" x2="-35.56" y2="139.7" width="0.1524" layer="91"/>
 <junction x="-35.56" y="139.7"/>
 </segment>
 <segment>
