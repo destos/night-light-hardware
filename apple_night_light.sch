@@ -5764,6 +5764,11 @@ at 30/07/2012 17:45:58</description>
 <wire x1="114.3" y1="63.5" x2="121.92" y2="63.5" width="0.1524" layer="91"/>
 <label x="121.92" y="63.5" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="LED1" gate="G$1" pin="BLUE_C"/>
+<wire x1="-119.38" y1="-25.4" x2="-132.08" y2="-25.4" width="0.1524" layer="91"/>
+<label x="-132.08" y="-25.4" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MISO" class="0">
 <segment>
@@ -5801,6 +5806,11 @@ at 30/07/2012 17:45:58</description>
 <pinref part="SPI" gate="G$1" pin="3"/>
 <wire x1="96.52" y1="63.5" x2="88.9" y2="63.5" width="0.1524" layer="91"/>
 <label x="88.9" y="63.5" size="1.778" layer="95" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="G$1" pin="RED_C"/>
+<wire x1="-119.38" y1="-15.24" x2="-124.46" y2="-15.24" width="0.1524" layer="91"/>
+<label x="-132.08" y="-15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CE" class="0">
@@ -6032,20 +6042,6 @@ at 30/07/2012 17:45:58</description>
 <pinref part="LED2" gate="G$1" pin="BLUE_A"/>
 <pinref part="LED3" gate="G$1" pin="BLUE_C"/>
 <wire x1="-86.36" y1="-25.4" x2="-73.66" y2="-25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="APADI" class="0">
-<segment>
-<pinref part="LED1" gate="G$1" pin="BLUE_C"/>
-<wire x1="-119.38" y1="-25.4" x2="-132.08" y2="-25.4" width="0.1524" layer="91"/>
-<label x="-132.08" y="-25.4" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="APACI" class="0">
-<segment>
-<pinref part="LED1" gate="G$1" pin="RED_C"/>
-<wire x1="-119.38" y1="-15.24" x2="-124.46" y2="-15.24" width="0.1524" layer="91"/>
-<label x="-132.08" y="-15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$15" class="0">
