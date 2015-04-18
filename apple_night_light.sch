@@ -7796,15 +7796,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-81.28" y1="12.7" x2="-76.2" y2="12.7" width="0.1524" layer="91"/>
 <junction x="-76.2" y="12.7"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<junction x="-76.2" y="17.78"/>
-<pinref part="U$3" gate="G$1" pin="IR-@2"/>
-<wire x1="-81.28" y1="27.94" x2="-76.2" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="-76.2" y1="27.94" x2="-76.2" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="IR-@1"/>
-<wire x1="-76.2" y1="22.86" x2="-76.2" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="-81.28" y1="22.86" x2="-76.2" y2="22.86" width="0.1524" layer="91"/>
-<junction x="-76.2" y="22.86"/>
-<junction x="-76.2" y="27.94"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
